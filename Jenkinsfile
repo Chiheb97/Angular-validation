@@ -1,6 +1,5 @@
 pipeline {
 	    agent any
-	    tools {nodejs "nodejs"}
 	    stages {
 	        stage ('GIT pull angular') {
             steps {
