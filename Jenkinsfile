@@ -8,8 +8,8 @@ pipeline {
                 git branch: "main",
                     url: "https://github.com/Chiheb97/Angular-validation"
             }
-        }       
-	            	
+        }
+
 	       stage('npm install'){
 	            steps{
 	                script{
@@ -17,7 +17,7 @@ pipeline {
 	                }
 	            }
 	        }
-		    
+
 		stage('python test'){
 	            steps{
 	                script{
@@ -25,10 +25,10 @@ pipeline {
 	                }
 	            }
 	        }
-		    
+
 	        stage('Build'){
 	            steps{
-	                script{ 
+	                script{
 	                    sh "ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml"
 	                }
 	            }
@@ -40,8 +40,8 @@ pipeline {
                 }
             }
         }
-       
 
 
- }
-	            
+
+ }}
+
