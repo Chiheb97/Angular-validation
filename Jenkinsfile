@@ -8,11 +8,9 @@ pipeline {
                 git branch: "main",
                     url: "https://github.com/Chiheb97/Angular-validation"
             }
-        }
-	        }
-	        
-	             	
-	        stage('npm install'){
+        }       
+	            	
+	       stage('npm install'){
 	            steps{
 	                script{
 	                    sh "npm install "
