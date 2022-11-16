@@ -4,7 +4,7 @@
   docker_image:
     name: devops
     build:
-     path: /var/lib/jenkins/workspace/cd_pipe
+     path: /var/lib/jenkins/workspace/validation-CD
      pull: no
     source: build
     state: present
