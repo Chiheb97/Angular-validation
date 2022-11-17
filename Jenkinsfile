@@ -36,7 +36,7 @@ pipeline {
 	              stage('docker'){
             steps{
                 script{
-                    sh "ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml"
+                    sh "ls"
                 }
             }
         }
@@ -50,7 +50,7 @@ pipeline {
       stage('run prometheus and grafana containers'){
             steps{
                 script{
-                    sh "docker start grafan && docker start prom"
+                    sh "docker restart grafan && docker restart prom"
                 }
             }
         }
