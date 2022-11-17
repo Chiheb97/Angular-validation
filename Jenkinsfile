@@ -47,6 +47,13 @@ pipeline {
                 }
             }
         }
+      stage('run prometheus and grafana containers'){
+            steps{
+                script{
+                    sh "docker start grafan && docker start prom"
+                }
+            }
+        }
 
 
  }}
