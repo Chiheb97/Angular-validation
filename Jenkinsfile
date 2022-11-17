@@ -50,7 +50,7 @@ pipeline {
       stage('run prometheus and grafana containers'){
             steps{
                 script{
-                    sh "docker restart grafan && docker restart prom"
+                    sh "docker restart grafan && docker restart prometheus "
                 }
             }
         }
